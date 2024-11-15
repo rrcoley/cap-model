@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Architecture Capability Model</title>
+	<link rel="stylesheet" href="./diagram.css">
+</head>
+
+<body>
+	<div class="main-container">
+
+		<div class="dropdown">
+  			<button onclick="myFunction()" class="dropbtn">Model</button>
+  			<div id="myDropdown" class="dropdown-content">
+    				<a href="?Model=CyberSecurity">CyberSecurity</a>
+    				<a href="?Model=Cloud">Cloud</a>
+    				<a href="?Model=Infrastructure">Infrastructure</a>
+  			</div>
+		</div>
+
+		<!-- Main Title -->
+		<div class="main-title">Architecture Capability Model</div>
+
+		<!-- Dynamic Sections Container -->
+		<div class="container" id="sections-container"></div>
+
+		<!-- Modal for showing definitions -->
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<span class="modal-close-x" id="modal-close-x">&times;</span>
+				<div id="modal-title"></div>
+				<div id="modal-description"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Load JSON from local FS -->
+	<!-- <script type="text/javascript" src="./Caps-cyber.js"></script> -->
+
+	<script type="text/javascript" src="./diagram.js"></script>
+</body>
